@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+<!--------------------------------------- Navigation Bar ---------------------------------------->
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Lakshan Hewagama</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Lakshan Hewagama</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!--------------------------------------- Profile section ---------------------------------------->
+
+    <section id="profile">
+      <div class="section-pic-container">
+        <img src="./assets/profile-pic.jpeg" alt="Lakshan Hewagama profile picture" class="pofile-pic"/>
+      </div>
+      <div class="section-text-container">
+        <p class="section-text-container-p1">Hello, I'm</p>
+        <h1 class="title">Lakshan Hewagama</h1>
+        <p class="section-text-container-p2">Undurgraduate</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/LakshanHewagama.pdf')"> Download CV </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Info </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://linkedin.com/in/lakshan-himansa-4486ab244/?originalSubdomain=lk" target="_blank">
+           <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+          </a>
+          <img src="./assets/github.png" alt="My Github profile" class="icon"+ onclick="location.href='https://github.com/'" />
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------- About section ---------------------------------------->
+
+    <section id="about">
+      <p class="section-text-container-p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="box-container">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="skill icon" class="icon"/>
+              <h3>Experience</h3>
+              <p>Still in 2nd year <br />Undergraduate</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
+              <h3>Education</h3>
+              <p>BSc ( Honours ) in Software Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p> As an undergraduate student, I'm passionate about Full-Stack development. I'm eager to tackle new challenges and opportunities to grow my skills. </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skill'"
+      />
+    </section>
+
+    <!--------------------------------------- Skills section ---------------------------------------->     
+
+    <section id="skill">
+      <p class="section-text-container-p1">Explore My</p>
+      <h1 class="title">skills</h1>
+      <div class="skill-details-container">
+        <div class="box-container">
+          <div class="details-container">
+            <h2 class="skill-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="skill icon" class="icon"/>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="skill icon" class="icon"/>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="skill icon" class="icon"/>
+                <div>
+                  <h3>Java Script</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skill-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="skill icon" class="icon"/>
+                <div>
+                  <h3>Java</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="skill icon" class="icon"/>
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="skill icon" class="icon"/>
+                <div>
+                  <h3>My Sql</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="skill icon" class="icon"/>
+                <div>
+                  <h3>Mongo DB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="skill icon" class="icon"/>
+                <div>
+                  <h3>Git</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <!--------------------------------------- Projects section ---------------------------------------->
+
+    <section id="projects">
+      <p class="section-text-container-p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skill-details-container">
+        <div class="box-container">
+          <!-- project 1  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.jpg" alt="Project 1" class="project-img"/>
+            </div>
+            <h2 class="skill-sub-title project-title">Calculator</h2>
+            <!-- <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'"> Github </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'"> Live Demo </button>
+            </div> -->
+          </div>
+          <!-- project 2  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.jpg" alt="Project 2" class="project-img"/>
+            </div>
+            <h2 class="skill-sub-title project-title">To Do App</h2>
+            <!-- <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'"> Github </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'"> Live Demo </button>
+            </div> -->
+          </div>
+          <!-- project 3  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img"/>
+            </div>
+            <h2 class="skill-sub-title project-title">Portfolio</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'"> Github </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'"> Live Demo </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+     <!--------------------------------------- Contact section ---------------------------------------->
+
+    <section id="contact">
+      <p class="section-text-container-p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:lakshanhewagama@gmail.com">Lakshanhewagama@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------- Footer section ---------------------------------------->
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">skill</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Lakshan Hewagama. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
